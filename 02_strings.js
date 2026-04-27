@@ -71,3 +71,12 @@ console.log(preguntaDeLaInicial)
 
 let preguntaDelFinal = nombrePila.endsWith("n")
 console.log(preguntaDelFinal)
+
+let nombreUsuario = "Peter"
+let apellidoUsuario = "Parker"
+let saludoUsuario = "buenas tardes " + nombreUsuario + " " + apellidoUsuario + "!"
+console.log(saludoUsuario);
+
+// template string
+let saludoUsuario2 = `buenas tardes ${nombreUsuario} ${apellidoUsuario} !`
+console.log(saludoUsuario2);
