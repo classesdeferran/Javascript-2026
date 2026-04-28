@@ -29,3 +29,18 @@ let saludo = "buenas " + "tardes"
 console.log("2" + 1);
 console.log("2" - 1);
 console.log("dos" - 1);
+
+// Precisión : OJO!
+num1 = 0.1
+num2 = 0.2
+suma = num1 + num2
+console.log(suma);
+console.log(num1+num2 == 0.3);
+
+let numGrande1 = 12345678901234567890
+console.log(numGrande1 == 12345678901234567890);
+console.log(numGrande1 == 12345678901234567891);
+
+let numGrande2 = 12345678901234567890n
+let numGrande3 = 12345678901234567891n
+console.log(numGrande2 == numGrande3);
