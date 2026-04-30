@@ -36,3 +36,31 @@ costeProducto = "34.5"
 costeProducto = parseFloat(costeProducto)
 console.log(typeof costeProducto);
 console.log(costeProducto + costeImpuestos);
+
+let saludo = "Hola"
+{
+    let saludo = "Buenas tardes"
+    console.log(saludo);
+}
+console.log(saludo);
+
+
+let saludo2 = "Hola"
+{
+    saludo2 = "Buenas tardes"
+    console.log(saludo2);
+}
+console.log(saludo2);
+
+{
+    let despedida = "Adiós"
+    console.log(despedida);
+}
+// console.log(despedida);
+
+
+{   
+    var numero = 1
+    console.log(numero);
+}
+console.log(numero);
