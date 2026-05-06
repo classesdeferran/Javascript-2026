@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios DOM y Eventos</title>
+    <script src="27_ejer_12_dom_events_solucio.js" defer></script>
+    <style>
+        main {
+            max-width: 80%;
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+      div {
+        margin-bottom: 20px;
+        padding: 2rem;
+        border: 1px solid black;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      div p:last-child {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      .darkTheme {
+        background-color: black;
+        color: white;
+      }
+      .lightTheme {
+        background-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="ejer1">
+        <p>
+          Contador de clics. Cada vez se haga clic en el botón ha de
+          incrementarse el valor
+        </p>
+        <button>+</button>
+        <p id="contadorEjer1">0</p>
+      </div>
+
+      <div id="ejer2">
+        <p>Contador de clics. Ahora el botón + suma y el botón - resta</p>
+        <button id="sumaClics">+</button>
+        <button id="restaClics">-</button>
+        <p id="contadorEjer2">0</p>
+      </div>
+
+      <div id="ejer3">
+        <p>
+          Al pasar el mouse por encima del div de abajo debe cambiar de color de
+          forma aleatoria
+        </p>
+        <div
+          id="divEjer3"
+          style="width: 200px; height: 200px; background-color: lightgray"
+        >
+        <p id="queColor">Aquí verás el color actual del div en formato rgb</p>
+         <p></p>
+    </div>
+      </div>
+
+      <div>
+        <p>Mostrar la hora. Al hacer clic en el botón se mostrará la hora actual en este formato: hh:mm:ss</p>
+        <button id="btnMostrarHora">Mostrar hora</button>
+        <p id="horaActual">¿Hora actual?</p>
+      </div>
+
+      <div id="divEjer5">
+        <p>Al hacer clic en el botón el fondo debe ser negro y el texto blanco</p>
+        <p>Si se vuelve a hacer clic el fondo debe ser blanco y el texto negro</p>
+        <p>Utiliza la clase darkTheme para cambiar el tema</p>
+        <button>Cambia tema</button>
+        <p></p>
+      </div>
+    </main>
+  </body>
+</html>
