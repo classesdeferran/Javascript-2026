@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios 1</title>
+    <script src="28_formularios_1.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Catálogo de etiquetas de formularios</h1>
+    </header>
+    <main>
+      <form method="POST" name="myForm">
+        <label for="nombre">Nombre: </label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          minlength="2"
+          maxlength="20"
+          placeholder="escribe aquí tu nombre"
+        />
+        <br /><br />
+        <label>Apellido: <input type="text" name="apellido" /></label>
+        <br /><br />
+        <input type="button" value="Button" onclick="enviarDatos()" />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+        <br /><br />
+        <label
+          >Number <input type="number" name="numero" id="numero" step="1"
+        /></label>
+        <br /><br />
+        <textarea name="textaarea" id="textarea" cols="20" rows="3">
+Textarea</textarea
+        >
+        <br /><br />
+        <label>Email: <input type="email" name="" id="" /></label>
+        <br /><br />
+        <label>Password: <input type="password" name="" id="" /></label>
+        <br /><br />
+        <input type="radio" name="color" id="rojo" checked /><label for="rojo"
+          >Rojo</label
+        >
+        <input type="radio" name="color" id="azul" /><label for="azul"
+          >Azul</label
+        >
+        <input type="radio" name="color" id="verde" /><label for="verde"
+          >Verde</label
+        >
+        <br /><br />
+        <label><input type="checkbox" name="" id="" /> checkbox</label>
+
+        <br /><br />
+        <select name="" id="" multiple>
+          <optgroup>
+            <option value="Nissan" selected>Nissan</option>
+            <option value="">Toyota</option>
+          </optgroup>
+          <optgroup>
+            <option value="">Ferrari</option>
+            <option value="">BMW</option>
+          </optgroup>
+          <optgroup>
+            <option value="">Ford</option>
+            <option value="">Chevrolet</option>
+          </optgroup>
+        </select>
+        <br /><br />
+        <input list="colores" />
+        <datalist id="colores">
+          <option value="Rojo">Rojo</option>
+          <option value="Azul">Azul</option>
+          <option value="Verde">Verde</option>
+          <option value="Amarillo">Amarillo</option>
+          <option value="Negro">Negro</option>
+        </datalist>
+        <br /><br />
+        <label>Date <input type="date" name="" id="" /></label>
+        <br /><br />
+        <label for=""
+          >Datetime-local <input type="datetime-local" name="" id=""
+        /></label>
+        <br /><br />
+        <label for="">Month <input type="month" name="" id="" /></label>
+        <input type="week" />
+        <input type="time" name="" id="" />
+        <br /><br />
+        <input type="datetime" name="" id="" />
+        <br /><br />
+        <button type="button">Button</button>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </main>
+  </body>
+</html>
