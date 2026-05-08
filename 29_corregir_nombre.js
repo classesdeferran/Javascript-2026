@@ -33,8 +33,7 @@ function verificarLongitud(nombre) {
     nombre = nombre.split(" ")
     
     for (let i = 0; i < nombre.length; i++) {
-        if (nombre[i].length < 2) return false  
-           
+        if (nombre[i].length < 2) return false             
     }
 
    return true
