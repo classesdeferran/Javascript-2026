@@ -17,7 +17,7 @@ formularioSencillo.addEventListener("submit", (event) => {
   // limpiar los mensajes anteriores
   errorNombre.textContent = "";
   let todoOK = true;
-  
+
   // Obtener los datos de los inputs
   let nombre = formularioSencillo["nombre"].value.trim();
   if (!verificarLongitud(nombre)) {
@@ -25,7 +25,14 @@ formularioSencillo.addEventListener("submit", (event) => {
     todoOK = false;
   }
   nombre = corregirNombreCompuesto(nombre);
-  console.log(nombre);
+//   console.log(nombre);
+
+  let apellido = formularioSencillo["apellido"].value.trim();
+  if (!verificarLongitud(apellido)) {
+    errorNombre.textContent = "Apellido incorrecto";
+    todoOK = false;
+  }
+  apellido = corregirNombreCompuesto(apellido);
 
   let email = formularioSencillo["email"].value;
   let password = formularioSencillo["password"].value;
@@ -62,4 +69,14 @@ formularioSencillo.addEventListener("submit", (event) => {
     console.log("Función finalizada por datos inválidos");
     return;
   }
+
+  const dialog = document.getElementById('dialog')
+  let datos = `<p>Nombre Completo: <span>${nombre} ${apellido}</span></p>`
+  datos += `<p>Email: <span>${email}</span></p>`
+  datos += `<p>Edad: <span>${edad} años<span></p>`
+
+  document.getElementById('datosIntroducidos').innerHTML = datos
+  dialog.showModal()
+  formularioSencillo.reset()
+
 });
