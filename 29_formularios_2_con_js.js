@@ -18,5 +18,6 @@ formularioSencillo.addEventListener('submit', (event) => {
     let password = formularioSencillo['password'].value
 
     let fechaNacimiento = formularioSencillo['fechaNacimiento'].value
-console.log(fechaNacimiento);
+    console.log(fechaNacimiento);
+    
 })
